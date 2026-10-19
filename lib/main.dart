@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'core/theme.dart';
-import 'features/reception/presentation/screens/reception_home_screen.dart';
+import 'features/reception/presentation/screens/agenda/reception_home_screen.dart';
 
 void main() {
   runApp(const VetCareApp());
@@ -12,7 +12,7 @@ class VetCareApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'VetCare INNIS',
+      title: 'VetCare INNIS', 
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: AppTheme.primaryBlue,

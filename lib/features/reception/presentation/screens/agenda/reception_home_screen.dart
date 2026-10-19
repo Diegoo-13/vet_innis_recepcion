@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import '../../../../core/theme.dart';
 import 'agenda_screen.dart';
+import '../avisos/avisos_screen.dart'; 
 
 class ReceptionHomeScreen extends StatefulWidget {
   const ReceptionHomeScreen({Key? key}) : super(key: key);
 
   @override
   State<ReceptionHomeScreen> createState() => _ReceptionHomeScreenState();
-}
+} 
 
 class _ReceptionHomeScreenState extends State<ReceptionHomeScreen> {
   int _currentIndex = 0;
@@ -15,6 +15,7 @@ class _ReceptionHomeScreenState extends State<ReceptionHomeScreen> {
   // Lista de pantallas principales para cada pestaña inferior
   final List<Widget> _screens = [
     const AgendaScreen(),
+    const AvisosScreen(),
     const Center(child: Text("Pantalla de Avisos")),
     const Center(child: Text("Pantalla de Domicilio")),
     const Center(child: Text("Pantalla de Perfil")),
@@ -32,7 +33,7 @@ class _ReceptionHomeScreenState extends State<ReceptionHomeScreen> {
           });
         },
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: AppTheme.primaryBlue,
+        selectedItemColor: Color(0xFF2563EB),
         unselectedItemColor: Colors.grey,
         selectedFontSize: 12,
         unselectedFontSize: 12,
