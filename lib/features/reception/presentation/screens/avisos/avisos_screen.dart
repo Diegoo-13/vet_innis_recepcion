@@ -7,7 +7,7 @@ class AvisosScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // El tono de verde brillante que definimos para WhatsApp
-    final Color verdeWhatsapp = const Color(0xFF25D366);
+    final Color verdeWhatsapp = const Color(0xFF00E676);
 
     return Scaffold(
       backgroundColor: const Color(0xFFF4F6F9),
@@ -81,7 +81,7 @@ class AvisosScreen extends StatelessWidget {
                 height: 52,
                 child: ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF23C552), // Azul principal
+                    backgroundColor: verdeWhatsapp, // Verde WhatsApp (0xFF00E676)
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),
